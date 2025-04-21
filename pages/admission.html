@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - NovaTech University</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NovaTech University</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admission.html" class="active">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admission-hero">
+            <div class="container">
+                <h1>Admission Process</h1>
+                <p>Start your journey with NovaTech University</p>
+            </div>
+        </section>
+
+        <section class="admission-steps">
+            <div class="container">
+                <h2>Admission Steps</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Choose Your Program</h3>
+                        <p>Select from our wide range of undergraduate and graduate programs</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Check Requirements</h3>
+                        <p>Review the admission requirements for your chosen program</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Prepare Documents</h3>
+                        <p>Gather all necessary documents and transcripts</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Submit Application</h3>
+                        <p>Complete and submit your application online</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-requirements">
+            <div class="container">
+                <h2>Admission Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h3>Undergraduate Programs</h3>
+                        <ul>
+                            <li>High school diploma or equivalent</li>
+                            <li>Minimum GPA of 3.0</li>
+                            <li>SAT/ACT scores</li>
+                            <li>Personal statement</li>
+                            <li>Letters of recommendation</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>Graduate Programs</h3>
+                        <ul>
+                            <li>Bachelor's degree from accredited institution</li>
+                            <li>Minimum GPA of 3.0</li>
+                            <li>GRE/GMAT scores</li>
+                            <li>Statement of purpose</li>
+                            <li>Letters of recommendation</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>PhD Programs</h3>
+                        <ul>
+                            <li>Master's degree in relevant field</li>
+                            <li>Research proposal</li>
+                            <li>Academic transcripts</li>
+                            <li>Letters of recommendation</li>
+                            <li>Writing samples</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-form">
+            <div class="container">
+                <h2>Application Form</h2>
+                <form id="admission-form" class="form">
+                    <div class="form-group">
+                        <label for="program">Program of Interest</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <optgroup label="Undergraduate Programs">
+                                <option value="computer-engineering">Computer Engineering</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="business">Business Administration</option>
+                                <option value="design">Digital Design</option>
+                            </optgroup>
+                            <optgroup label="Graduate Programs">
+                                <option value="mba">MBA</option>
+                                <option value="ms-cs">MS Computer Science</option>
+                                <option value="ms-robotics">MS Robotics</option>
+                                <option value="ma-media">MA Digital Media</option>
+                            </optgroup>
+                            <optgroup label="PhD Programs">
+                                <option value="phd-cs">PhD Computer Science</option>
+                                <option value="phd-engineering">PhD Engineering</option>
+                                <option value="phd-business">PhD Business</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Highest Education Level</label>
+                        <select id="education" name="education" required>
+                            <option value="">Select Education Level</option>
+                            <option value="high-school">High School</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="documents">Upload Documents</label>
+                        <input type="file" id="documents" name="documents" multiple>
+                        <small>Upload your transcripts, resume, and other required documents</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="statement">Personal Statement</label>
+                        <textarea id="statement" name="statement" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="admission-deadlines">
+            <div class="container">
+                <h2>Application Deadlines</h2>
+                <div class="deadlines-grid">
+                    <div class="deadline-card">
+                        <h3>Fall Semester</h3>
+                        <p>Application Deadline: June 1</p>
+                        <p>Classes Start: September 1</p>
+                    </div>
+                    <div class="deadline-card">
+                        <h3>Spring Semester</h3>
+                        <p>Application Deadline: November 1</p>
+                        <p>Classes Start: January 15</p>
+                    </div>
+                    <div class="deadline-card">
+                        <h3>Summer Semester</h3>
+                        <p>Application Deadline: March 1</p>
+                        <p>Classes Start: May 15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 University Avenue</p>
+                    <p>Tech City, TC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@novatech.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NovaTech University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

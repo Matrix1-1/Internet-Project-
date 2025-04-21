@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - NovaTech University</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NovaTech University</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="courses-hero">
+            <div class="container">
+                <h1>Our Courses</h1>
+                <p>Explore our comprehensive range of academic programs</p>
+            </div>
+        </section>
+
+        <section class="courses-filter">
+            <div class="container">
+                <div class="filter-section">
+                    <h3>Filter Courses</h3>
+                    <div class="filter-options">
+                        <select id="department-filter">
+                            <option value="all">All Departments</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="science">Science</option>
+                            <option value="business">Business</option>
+                            <option value="arts">Arts & Humanities</option>
+                        </select>
+                        <select id="level-filter">
+                            <option value="all">All Levels</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                        <input type="text" id="search-input" placeholder="Search courses...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-grid">
+            <div class="container">
+                <div class="course-cards">
+                    <!-- Engineering Courses -->
+                    <div class="course-card" data-department="engineering" data-level="undergraduate">
+                        <div class="course-header">
+                            <h3>Computer Engineering</h3>
+                            <span class="course-level">Undergraduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Bachelor of Science in Computer Engineering</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 4 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 120 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-department="engineering" data-level="graduate">
+                        <div class="course-header">
+                            <h3>Advanced Robotics</h3>
+                            <span class="course-level">Graduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Master of Science in Robotics Engineering</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 2 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 60 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Science Courses -->
+                    <div class="course-card" data-department="science" data-level="undergraduate">
+                        <div class="course-header">
+                            <h3>Computer Science</h3>
+                            <span class="course-level">Undergraduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Bachelor of Science in Computer Science</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 4 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 120 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-department="science" data-level="phd">
+                        <div class="course-header">
+                            <h3>Quantum Computing</h3>
+                            <span class="course-level">PhD</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Doctor of Philosophy in Quantum Computing</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 4-5 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> Research Based</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Business Courses -->
+                    <div class="course-card" data-department="business" data-level="undergraduate">
+                        <div class="course-header">
+                            <h3>Business Administration</h3>
+                            <span class="course-level">Undergraduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Bachelor of Business Administration</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 4 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 120 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-department="business" data-level="graduate">
+                        <div class="course-header">
+                            <h3>MBA</h3>
+                            <span class="course-level">Graduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Master of Business Administration</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 2 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 60 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Arts & Humanities Courses -->
+                    <div class="course-card" data-department="arts" data-level="undergraduate">
+                        <div class="course-header">
+                            <h3>Digital Design</h3>
+                            <span class="course-level">Undergraduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Bachelor of Arts in Digital Design</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 4 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 120 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-department="arts" data-level="graduate">
+                        <div class="course-header">
+                            <h3>Digital Media</h3>
+                            <span class="course-level">Graduate</span>
+                        </div>
+                        <div class="course-info">
+                            <p>Master of Arts in Digital Media</p>
+                            <ul class="course-details">
+                                <li><i class="fas fa-clock"></i> 2 Years</li>
+                                <li><i class="fas fa-graduation-cap"></i> 60 Credits</li>
+                                <li><i class="fas fa-language"></i> English</li>
+                            </ul>
+                            <a href="#" class="course-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-features">
+            <div class="container">
+                <h2>Why Choose Our Courses?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Comprehensive Curriculum</h3>
+                        <p>Industry-relevant courses designed for success</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Expert Faculty</h3>
+                        <p>Learn from experienced professionals</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Practical Learning</h3>
+                        <p>Hands-on experience with modern tools</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Global Recognition</h3>
+                        <p>Internationally accredited programs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 University Avenue</p>
+                    <p>Tech City, TC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@novatech.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NovaTech University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/courses.js"></script>
+</body>
+</html> 

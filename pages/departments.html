@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departments - NovaTech University</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>NovaTech University</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html" class="active">Departments</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portal.html">Student Portal</a></li>
+          </ul>
+          <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="departments-hero">
+        <div class="container">
+          <h1>Academic Departments</h1>
+          <p>Explore our diverse range of academic departments</p>
+        </div>
+      </section>
+
+      <section class="departments-filter">
+        <div class="container">
+          <div class="filter-options">
+            <button class="filter-btn active" data-filter="all">
+              All Departments
+            </button>
+            <button class="filter-btn" data-filter="engineering">
+              Engineering
+            </button>
+            <button class="filter-btn" data-filter="science">Science</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="arts">
+              Arts & Humanities
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="departments-grid">
+        <div class="container">
+          <div class="department-cards">
+            <!-- Engineering Departments -->
+            <div class="department-card" data-category="engineering">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                alt="Computer Engineering"
+              />
+              <div class="department-info">
+                <h3>Computer Engineering</h3>
+                <p>
+                  Combine computer science and electrical engineering to develop
+                  computer systems.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div class="department-card" data-category="engineering">
+              <img
+                src="../departments/mechanical-engineering.jpg"
+                alt="Mechanical Engineering"
+              />
+              <div class="department-info">
+                <h3>Mechanical Engineering</h3>
+                <p>
+                  Design and manufacture mechanical systems and industrial
+                  processes.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Science Departments -->
+            <div class="department-card" data-category="science">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+                alt="Computer Science"
+              />
+              <div class="department-info">
+                <h3>Computer Science</h3>
+                <p>
+                  Study the theoretical and practical aspects of computer
+                  technology and information systems.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div class="department-card" data-category="science">
+              <img
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d"
+                alt="Physics"
+              />
+              <div class="department-info">
+                <h3>Physics</h3>
+                <p>
+                  Study matter, energy, and their interactions in the universe.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Business Departments -->
+            <div class="department-card" data-category="business">
+              <img
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+                alt="Business Administration"
+              />
+              <div class="department-info">
+                <h3>Business Administration</h3>
+                <p>Learn management principles and business operations.</p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div class="department-card" data-category="business">
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+                alt="Finance"
+              />
+              <div class="department-info">
+                <h3>Finance</h3>
+                <p>
+                  Study financial markets, investments, and corporate finance.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Arts & Humanities Departments -->
+            <div class="department-card" data-category="arts">
+              <img src="../departments/design.jpg" alt="Design" />
+              <div class="department-info">
+                <h3>Design</h3>
+                <p>
+                  Explore graphic design, user interface, and digital media.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div class="department-card" data-category="arts">
+              <img
+                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+                alt="Communications"
+              />
+              <div class="department-info">
+                <h3>Communications</h3>
+                <p>Study media, journalism, and public relations.</p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="department-highlights">
+        <div class="container">
+          <h2>Department Highlights</h2>
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <i class="fas fa-flask"></i>
+              <h3>Research Excellence</h3>
+              <p>
+                Our departments are at the forefront of research and innovation.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-users"></i>
+              <h3>Expert Faculty</h3>
+              <p>Learn from industry leaders and experienced researchers.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Career Support</h3>
+              <p>Strong industry connections and placement services.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-globe"></i>
+              <h3>Global Opportunities</h3>
+              <p>
+                International exchange programs and research collaborations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 University Avenue</p>
+            <p>Tech City, TC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@novatech.edu</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="departments.html">Departments</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="admission.html">Admission</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 NovaTech University. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/departments.js"></script>
+  </body>
+</html>

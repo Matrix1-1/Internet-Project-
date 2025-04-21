@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - NovaTech University</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NovaTech University</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portal.html" class="active">Portal</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard-hero">
+            <div class="container">
+                <h1>Student Dashboard</h1>
+                <p>Welcome to your academic portal</p>
+            </div>
+        </section>
+
+        <section class="dashboard-content">
+            <div class="container">
+                <div class="dashboard-grid">
+                    <div class="student-info">
+                        <h2>Student Information</h2>
+                        <div class="info-card">
+                            <div class="student-avatar">
+                                <img src="../images/dashboard/student-avatar.jpg" alt="Student Avatar" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 200 200%22%3e%3crect width=%22200%22 height=%22200%22 fill=%22%23f0f0f0%22/%3e%3ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22%23666%22%3eStudent%3c/text%3e%3c/svg%3e'">
+                            </div>
+                            <div class="student-details">
+                                <p><strong>Name:</strong> John Doe</p>
+                                <p><strong>Student ID:</strong> 1000</p>
+                                <p><strong>Email:</strong> Student1000@nova.com</p>
+                                <p><strong>Department:</strong> Computer Science</p>
+                                <p><strong>Year:</strong> 2024</p>
+                                <p><strong>GPA:</strong> 3.8</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-widgets">
+                        <div class="widget">
+                            <h3>Academic Calendar</h3>
+                            <div class="calendar-events">
+                                <div class="event">
+                                    <span class="event-date">Apr 25</span>
+                                    <span class="event-title">Midterm Exams</span>
+                                </div>
+                                <div class="event">
+                                    <span class="event-date">May 15</span>
+                                    <span class="event-title">Final Project Due</span>
+                                </div>
+                                <div class="event">
+                                    <span class="event-date">May 20</span>
+                                    <span class="event-title">Final Exams</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <h3>Quick Links</h3>
+                            <ul class="quick-links">
+                                <li><a href="#"><i class="fas fa-book"></i> Course Materials</a></li>
+                                <li><a href="#"><i class="fas fa-file-alt"></i> Assignments</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Grades</a></li>
+                                <li><a href="#"><i class="fas fa-calendar"></i> Schedule</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="current-courses">
+                        <h2>Current Courses</h2>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>CS101 - Introduction to Programming</h3>
+                                <p><strong>Instructor:</strong> Dr. Smith</p>
+                                <p><strong>Schedule:</strong> Mon/Wed 10:00 AM</p>
+                                <p><strong>Grade:</strong> A</p>
+                                <div class="course-progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3>CS201 - Data Structures</h3>
+                                <p><strong>Instructor:</strong> Dr. Johnson</p>
+                                <p><strong>Schedule:</strong> Tue/Thu 2:00 PM</p>
+                                <p><strong>Grade:</strong> A-</p>
+                                <div class="course-progress">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h3>MATH101 - Calculus I</h3>
+                                <p><strong>Instructor:</strong> Dr. Williams</p>
+                                <p><strong>Schedule:</strong> Mon/Wed/Fri 1:00 PM</p>
+                                <p><strong>Grade:</strong> B+</p>
+                                <div class="course-progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@novatech.edu</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 University Ave, City, Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NovaTech University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
