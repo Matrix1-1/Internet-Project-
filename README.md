@@ -145,8 +145,4 @@ For detailed documentation, please refer to `documentation.txt` in the project r
 
 
 
-## Contact
 
-For any questions or support, please contact:
-- Email: support@novatech.edu
-- Phone: +1 (555) 123-4567 
